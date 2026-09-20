@@ -1,0 +1,6 @@
+{
+  "name": "রামপাল নিউজ (Rampal News)",
+  "description": "রামপাল নিউজ (Rampal News) – আধুনিক ও নির্ভরযোগ্য বাংলা ডিজিটাল সংবাদ পোর্টাল। ব্রেকিং নিউজ, জাতীয়, রাজনীতি, আন্তর্জাতিক, রামপাল ও খুলনা সহ সব খবর।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

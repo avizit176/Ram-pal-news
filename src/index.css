@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bengali: 'Hind Siliguri', 'SolaimanLipi', system-ui, -apple-system, sans-serif;
+  --font-serif-bengali: 'Noto Serif Bengali', 'Kalpurush', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-bengali);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-serif-bengali {
+  font-family: var(--font-serif-bengali);
+}
+
+/* Custom scrolling ticker animation */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 35s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Print Stylesheet for News Printing */
+@media print {
+  header, footer, nav, .no-print, .ad-slot, .social-share-bar, .comment-section {
+    display: none !important;
+  }
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 14pt !important;
+    line-height: 1.6 !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
